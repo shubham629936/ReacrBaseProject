@@ -1,0 +1,74 @@
+
+.mainBox{
+  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  position: relative;
+  top: 270px;
+  flex-wrap: wrap;
+  z-index: 2;
+  font-size: 12px;
+}
+.diva{
+     height: 300px;
+     display: flex;
+     flex-direction: column;
+     background-color: rgb(227, 215, 250);
+     flex-wrap: nowrap;
+     border-radius: 14px;
+     padding: 5px;
+     row-gap:3px;
+
+}
+@media (max-width: 700px) {
+    .mainBox {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (max-width: 400px) {
+    .mainBox {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+.img{
+     width: 99%;
+     height: 65%;
+     position: relative;
+     top: -10px;
+     border-radius: 14px;
+    
+}
+.delete{
+     align-self: flex-end;
+     z-index: 5;
+     color: rgb(97, 97, 97);
+     cursor: pointer;
+}
+ .details{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    position: relative;
+    bottom: 10px;
+    padding-left: 12px;
+ }
+ .bName{
+    font-weight: 600;
+    font-size: 15px;
+ }
+ .price{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+ }
+.price2{
+    text-decoration: line-through;
+    color: rgba(59, 59, 59, 0.557);
+}
+.price1{
+    font-size: 15px;
+    font-weight: 500;
+}
+.desc{
+    font-size: 10px;
+}
